@@ -1,0 +1,28 @@
+<mvc:View controllerName="mlRetainService.ml-retain-service.controller.initialView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+	xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page title="ML Retrain Text Classifier">
+					<content>
+						<FlexBox height="100%" alignItems="Center" justifyContent="Center">
+							<items>
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Create a Storage" subheader="View, Add,and Delete Storage"
+									mode="HeaderMode" press="StoragrTilePressed"></GenericTile>
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Jobs" subheader="View, Add and Delete Jobs"
+									mode="HeaderMode" press="jobsTilePressed"></GenericTile>
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Models" subheader="View and Delete Models" mode="HeaderMode"
+									press="modelsTilePressed"></GenericTile>
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Deployments" subheader="View, Add, and Delete Deployments"
+									mode="HeaderMode" press="deployTilePressed"></GenericTile>
+								<GenericTile class="sapUiTinyMarginBegin sapUiTinyMarginTop tileLayout" header="Process Flow" subheader="View Process Flow Diagram"
+									mode="HeaderMode" press="processflowTilePressed"></GenericTile>
+							</items>
+						</FlexBox>
+						<!--</Panel>-->
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

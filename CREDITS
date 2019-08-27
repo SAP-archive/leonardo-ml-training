@@ -1,0 +1,79 @@
+This program references the following third party open source or other free download components.
+The third party licensors of these components may provide additional license rights,
+terms and conditions and/or require certain notices as described below.
+
+AWS Java SDK for Amazon S3 (com.amazonaws:aws-java-sdk-s3:1.11.549 - https://aws.amazon.com/sdkforjava)
+Licensed under Apache License, Version 2.0
+
+Bean Validation API (javax.validation:validation-api:2.0.1.Final - http://beanvalidation.org)
+Licensed under Apache License 2.0
+
+cf-java-logging-support-logback (com.sap.hcp.cf.logging:cf-java-logging-support-logback:2.2.2 - https://github.com/SAP/cf-java-logging-support/cf-java-logging-support-logback)
+Licensed under The Apache Software License, Version 2.0
+
+cglib (cglib:cglib:3.2.4 - https://github.com/cglib/cglib/cglib)
+Licensed under ASF 2.0
+
+Cloud Platform - SAP CP Cloud Foundry (com.sap.cloud.s4hana.cloudplatform:scp-cf:2.9.1 - https://www.sap.com/s4sdk)
+Licensed under SAP DEVELOPER LICENSE AGREEMENT
+
+com.sap.apibhub.sdk (com.sap.apibhub:com.sap.apibhub.sdk:1.0.0 - https://github.com/swagger-api/swagger-codegen)
+Licensed under Unknown license
+
+JUnit (junit:junit:4.12 - http://junit.org)		
+Licensed under Eclipse Public License 1.0
+
+Hibernate Validator Annotation Processor (org.hibernate.validator:hibernate-validator-annotation-processor:6.0.13.Final - http://hibernate.org/validator/hibernate-validator-annotation-processor)
+Licensed under Apache License 2.0
+
+Hibernate Validator Engine (org.hibernate.validator:hibernate-validator:6.0.13.Final - http://hibernate.org/validator/hibernate-validator)
+Licensed under Apache License 2.0
+
+javax.inject (javax.inject:javax.inject:1 - http://code.google.com/p/atinject/)
+Licensed under The Apache Software License, Version 2.0
+
+JCL 1.2 implemented over SLF4J (org.slf4j:jcl-over-slf4j:1.7.25 - http://www.slf4j.org)
+Licensed under MIT License
+
+Logback Classic Module (ch.qos.logback:logback-classic:1.2.3 - http://logback.qos.ch/logback-classic)
+Licensed under Eclipse Public License - v 1.0
+Licensed under GNU Lesser General Public License
+
+Project Lombok (org.projectlombok:lombok:1.18.2 - https://projectlombok.org)
+Licensed under The MIT License
+
+SAP S/4HANA - All (com.sap.cloud.s4hana:s4hana-all:2.9.1 - https://www.sap.com/s4sdk)
+Licensed under SAP DEVELOPER LICENSE AGREEMENT
+
+SLF4J API Module (org.slf4j:slf4j-api:1.7.25 - http://www.slf4j.org)
+Licensed under MIT License
+
+Spring TestContext Framework (org.springframework:spring-test:5.1.1.RELEASE - https://github.com/spring-projects/spring-framework)		SAP S/4HANA - All (com.sap.cloud.s4hana:s4hana-all:2.9.1 - https://www.sap.com/s4sdk)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Actuator (org.springframework.boot:spring-boot-actuator:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-actuator)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Configuration Processor (org.springframework.boot:spring-boot-configuration-processor:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-tools/spring-boot-configuration-processor)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Starter (org.springframework.boot:spring-boot-starter:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Tomcat Starter (org.springframework.boot:spring-boot-starter-tomcat:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-tomcat)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Web Starter (org.springframework.boot:spring-boot-starter-web:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-starters/spring-boot-starter-web)
+Licensed under Apache License, Version 2.0
+
+Spring Web MVC (org.springframework:spring-webmvc:5.1.1.RELEASE - https://github.com/spring-projects/spring-framework)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Test (org.springframework.boot:spring-boot-test:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-test)
+Licensed under Apache License, Version 2.0
+
+Spring Boot Test Auto-Configure (org.springframework.boot:spring-boot-test-autoconfigure:2.0.6.RELEASE - https://projects.spring.io/spring-boot/#/spring-boot-parent/spring-boot-test-autoconfigure)
+Licensed under Apache License, Version 2.0
+
+
+

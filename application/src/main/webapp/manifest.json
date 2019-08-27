@@ -1,0 +1,158 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "mlRetainService.ml-retain-service",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"resources": "resources.json",
+		"ach": "ach",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "mlRetainService.ml-retain-service.view.initialView",
+			"type": "XML",
+			"async": true,
+			"id": "initialView"
+		},
+		"dependencies": {
+			"minUI5Version": "1.60.1",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "mlRetainService.ml-retain-service.i18n.i18n"
+				}
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "mlRetainService.ml-retain-service.view",
+				"controlAggregation": "pages",
+				"controlId": "app",
+				"clearControlAggregation": false
+			},
+			"routes": [
+				{
+					"name": "RouteinitialView",
+					"pattern": "RouteinitialView",
+					"target": [
+						"TargetinitialView"
+					]
+				},
+				{
+					"name": "Storage",
+					"pattern": "Storage",
+					"target": "Storage"
+				},
+				{
+					"name": "Jobs",
+					"pattern": "Jobs",
+					"target": "Jobs"
+				},
+				{
+					"name": "Models",
+					"pattern": "Models",
+					"target": "Models"
+				},
+				{
+					"name": "Deployments",
+					"pattern": "Deployments",
+					"target": "Deployments"
+				},
+				{
+					"name": "ProcessFlow",
+					"pattern": "ProcessFlow",
+					"target": "ProcessFlow"
+				}
+			],
+			"targets": {
+				"TargetinitialView": {
+					"viewType": "XML",
+					"transition": "slide",
+					"viewName": "initialView",
+					"viewLevel": 0
+				},
+				"Storage": {
+					"viewType": "XML",
+					"transition": "show",
+					"viewName": "storage",
+					"viewLevel": 1
+				},
+				"Jobs": {
+					"viewType": "XML",
+					"transition": "show",
+					"viewName": "jobs",
+					"viewLevel": 1
+				},
+				"Models": {
+					"viewType": "XML",
+					"transition": "show",
+					"viewName": "models",
+					"viewLevel": 1
+				},
+				"Deployments": {
+					"viewType": "XML",
+					"transition": "show",
+					"viewName": "deploy",
+					"viewLevel": 1
+				},
+				"ProcessFlow": {
+					"viewType": "XML",
+					"transition": "show",
+					"viewName": "processflow",
+					"viewLevel": 2
+				}
+			}
+		}
+	},
+	"sap.platform.hcp": {
+		"uri": "webapp",
+		"_version": "1.1.0"
+	}
+}

@@ -1,0 +1,11 @@
+---
+ applications:
+ - name: ml-retain-service-ui
+ memory: 256M
+ disk_quota: 256M
+ timeout: 300
+ random-route: false
+ instances: 1
+ buildpack: staticfile_buildpack
+ path: ./
+ root: webapp

@@ -1,0 +1,41 @@
+<mvc:View controllerName="mlRetainService.ml-retain-service.controller.deploy" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:tnt="sap.tnt">
+	<Page title="Deployments" class="sapUiContentPadding" showNavButton="true" navButtonPress="navigateToMainPage">
+		<Table id="allDeployList" items="{/deployments}" itemPress="onItemPress">
+			<columns>
+				<Column>
+					<Text text="Deployment Id"/>
+				</Column>
+				<Column>
+					<Text text="Status"/>
+				</Column>
+				<Column>
+					<Text text="Model"/>
+				</Column>
+				<Column>
+					<Text text="Model Container"/>
+				</Column>
+				<Column hAlign="Right">
+					<Text text="Actions"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem type="Active">
+					<cells>
+						<ObjectIdentifier title="{id}"/>
+						<tnt:InfoLabel text="{status/state}" displayOnly="true" colorScheme="{ parts: [ {path: 'status/state'} ], formatter: '.availableState' }"/>
+						<ObjectIdentifier title="Name: {modelName}" text="version: {modelVersion}"/>
+						<ObjectIdentifier title="host: {modelContainer/host}" text="port: {modelContainer/port}"/>
+						<Button icon="sap-icon://delete" press="deleteDeployment"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Add Deployment" icon="sap-icon://add" press="addDeployment"/>
+			</Toolbar>
+		</footer>
+	</Page>
+</mvc:View>

@@ -1,0 +1,37 @@
+<mvc:View controllerName="mlRetainService.ml-retain-service.controller.models" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:tnt="sap.tnt">
+	<Page title="Models" class="sapUiContentPadding" showNavButton="true" navButtonPress="navigateToMainPage">
+		<Table id="allModelsList" items="{/models}">
+			<columns>
+				<Column>
+					<Text text="Model Name"/>
+				</Column>
+				<Column>
+					<Text text="Version"/>
+				</Column>
+				<Column>
+					<Text text="Created At"/>
+				</Column>
+				<Column>
+					<Text text="Last Updated At"/>
+				</Column>
+				<Column hAlign="Right">
+					<Text text="Actions"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<ObjectIdentifier title="{modelName}"/>
+						<ObjectIdentifier text="{version}"/>
+						<ObjectIdentifier
+							text="{parts:[{path:'createdAt/monthOfYear'},{path:'createdAt/dayOfMonth'}, {path:'createdAt/year'},{path:'createdAt/hourOfDay'},{path:'createdAt/minuteOfHour'},{path:'createdAt/secondOfMinute'}], formatter: '.dateText' }"/>
+						<ObjectIdentifier
+							text="{parts:[{path:'updatedAt/monthOfYear'},{path:'updatedAt/dayOfMonth'}, {path:'updatedAt/year'},{path:'updatedAt/hourOfDay'},{path:'updatedAt/minuteOfHour'},{path:'updatedAt/secondOfMinute'}], formatter: '.dateText' }"/>
+						<Button icon="sap-icon://delete" press="deleteJob"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+	</Page>
+</mvc:View>

@@ -1,0 +1,44 @@
+<mvc:View controllerName="mlRetainService.ml-retain-service.controller.jobs" xmlns:mvc="sap.ui.core.mvc" xmlns:core="sap.ui.core"
+	xmlns="sap.m" xmlns:tnt="sap.tnt">
+	<Page title="Jobs" class="sapUiContentPadding" showNavButton="true" navButtonPress="navigateToMainPage">
+		<Table id="allJobsList" items="{path: '/jobs'}">
+			<columns>
+				<Column>
+					<Text text="Job Id"/>
+				</Column>
+				<Column>
+					<Text text="Status"/>
+				</Column>
+				<Column>
+					<Text text="Submission Time"/>
+				</Column>
+				<Column>
+					<Text text="Finish Time"/>
+				</Column>
+				<Column hAlign="Right">
+					<Text text="Actions"/>
+				</Column>
+			</columns>
+			<items>
+				<ColumnListItem>
+					<cells>
+						<ObjectIdentifier title="{id}"/>
+						<tnt:InfoLabel text="{status}" displayOnly="true" colorScheme="{ parts: [ {path: 'status'} ], formatter: '.availableState' }"/>
+						<ObjectIdentifier
+							text="{parts:[{path:'submissionTime/monthOfYear'},{path:'submissionTime/dayOfMonth'}, {path:'submissionTime/year'},{path:'submissionTime/hourOfDay'},{path:'submissionTime/minuteOfHour'},{path:'submissionTime/secondOfMinute'}], formatter: '.dateText' }"/>
+						<ObjectIdentifier
+							text="{parts:[{path:'finishTime/monthOfYear'},{path:'finishTime/dayOfMonth'}, {path:'finishTime/year'},{path:'finishTime/hourOfDay'},{path:'finishTime/minuteOfHour'},{path:'finishTime/secondOfMinute'}], formatter: '.dateText' }"/>
+						<Button icon="sap-icon://delete" press="deleteJob"/>
+					</cells>
+				</ColumnListItem>
+			</items>
+		</Table>
+		<footer>
+			<Toolbar>
+				<ToolbarSpacer/>
+				<Button text="Add Job" icon="sap-icon://add" press="addJob"/>
+			</Toolbar>
+		</footer>
+	</Page>
+	<!--{submissionTime/dayOfMonth}, {submissionTime/year}, {submissionTime/hourOfDay}:{submissionTime/minuteOfHour}:{submissionTime/secondOfMinute}-->
+</mvc:View>

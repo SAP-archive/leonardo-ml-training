@@ -1,0 +1,49 @@
+<mvc:View
+	xmlns:mvc="sap.ui.core.mvc"
+	xmlns:m="sap.m"
+	xmlns="sap.suite.ui.commons"
+	controllerName="mlRetainService.ml-retain-service.controller.processflow">
+	
+	<m:Page
+		title="Process Flow"
+		class="sapUiContentPadding"
+		showNavButton="true" navButtonPress ="navigateToMainPage">
+	
+	<m:Panel>
+		<m:Label text="Process Flow sample - zooming buttons and highlighted items" />
+		<m:HBox renderType="Bare">
+			<m:Button text="Zoom In" press="onZoomIn" />
+			<m:Button text="Zoom Out" press="onZoomOut" />
+		</m:HBox>
+		
+		<ProcessFlow
+			id="processflow2"
+			scrollable="false"
+			foldedCorners="true"
+			nodes="{pf2>/nodes}"
+			lanes="{pf2>/lanes}">
+			<nodes>
+				<ProcessFlowNode
+					laneId="{pf2>lane}"
+					nodeId="{pf2>id}"
+					title="{pf2>title}"
+					titleAbbreviation="{pf2>titleAbbreviation}"
+					children="{pf2>children}"
+					state="{pf2>state}"
+					stateText="{pf2>stateText}"
+					texts="{pf2>texts}"
+					focused="{pf2>focused}" />
+			</nodes>
+			<lanes>
+				<ProcessFlowLaneHeader
+					laneId="{pf2>id}"
+					iconSrc="{pf2>icon}"
+					text="{pf2>label}"
+					position="{pf2>position}"
+					state="{pf2>state}" />
+			</lanes>
+		</ProcessFlow>
+	</m:Panel>
+</m:Page>
+
+</mvc:View>
