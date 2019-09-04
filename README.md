@@ -16,15 +16,15 @@ This tutorial is one of multiple tutorials that make up the SAP Extensibility Ex
 - An SAP S/4HANA Cloud tenant. This is a commercial paid product.
 
 # Download and Installation
-This repository is a part of the sample [ML Text Classifier](http://tiny.cc/s4-cust-risk-intelligence). In step 'Build and Deploy the Application' in the tutorial the instructions for use can be found.
+This repository is a part of the sample [ML Text Classifier](https://help.sap.com/viewer/ee756dfe439d431b913e29a50e7648e2/latest/en-US). In step ['Build and Deploy'](https://help.sap.com/viewer/ee756dfe439d431b913e29a50e7648e2/latest/en-US/3dacfe580499419ab0909a3233191087.html) in the tutorial the instructions for use can be found.
 
-[Please download the zip file by clicking here](https://github.com/SAP/leonardo-ml-training/archive/master.zip) so that the code can be used in the tutorial.
+[Please download the zip file by clicking here](https://github.com/SAP-samples/leonardo-ml-training/archive/master.zip) so that the code can be used in the tutorial.
 
 # Known issues
 None
 
 # How to obtain support
-If you have issues with this sample, please open a report using [GitHub issues](https://github.com/SAP/leonardo-ml-training/issues).
+If you have issues with this sample, please open a report using [GitHub issues](https://github.com/SAP-samples/leonardo-ml-training/issues).
 
 # License
 Copyright © 2019 SAP SE or an SAP affiliate company. All rights reserved. This file is licensed under the SAP Sample Code License except as noted otherwise in the [LICENSE file](LICENSE).
