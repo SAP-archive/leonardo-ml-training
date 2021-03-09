@@ -1,3 +1,8 @@
+![](https://img.shields.io/badge/STATUS-NOT%20CURRENTLY%20MAINTAINED-red.svg?longCache=true&style=flat)
+
+# Important Notice
+This public repository is read-only and no longer maintained.
+
 # SAP Cloud Application - ML Text Classifier
 This repository contains the sample code for the ML Text Classifier which is prerequisite & part of [Customer Risk Intelligence tutorial](http://tiny.cc/s4-cust-risk-intelligence).
 
